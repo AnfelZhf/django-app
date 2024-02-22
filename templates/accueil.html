@@ -1,0 +1,22 @@
+{% load static %}
+<!-- accueil.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+<body>
+    <h1>Bienvenue sur la page d'accueil</h1>
+    <ul>
+        <li><a href="{% url 'n_add_numbers' %}">Page d'index</a></li>
+        <li><a href="{% url 'n_add_numbers2' %}">Page d'index2</a></li>
+        <li><a href="{% url 'ajouter_etudiant' %}">Ajouter un étudiant</a></li>
+        <li><a href="{% url 'modifier' %}">Modifier un étudiant</a></li>
+        <li><a href="{% url 'supprimer' %}">Supprimer un étudiant</a></li>
+
+       
+    </ul>
+</body>
+</html>
